@@ -1,0 +1,69 @@
+server/encryption.ts(38,14): error TS2339: Property 'getAuthTag' does not exist on type 'Cipher'.
+server/encryption.ts(60,14): error TS2339: Property 'setAuthTag' does not exist on type 'Decipher'.
+server/encryption.ts(81,28): error TS2339: Property 'getAuthTag' does not exist on type 'Cipher'.
+server/encryption.ts(98,14): error TS2339: Property 'setAuthTag' does not exist on type 'Decipher'.
+server/routes.ts(186,37): error TS2345: Argument of type 'MemStorage' is not assignable to parameter of type 'IStorage'.
+  Types of property 'logActivity' are incompatible.
+    Type '(insertLog: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }) => Promise<...>' is not assignable to type '{ (log: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }): Promise<...>; (params: { ...; }): Promise<...>; }'.
+      Types of parameters 'insertLog' and 'params' are incompatible.
+        Type '{ userId: number; action: string; resourceId: string; resourceType: string; details: any; ipAddress: string | null; }' is not assignable to type '{ action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }'.
+          Types of property 'resourceId' are incompatible.
+            Type 'string' is not assignable to type 'number'.
+server/routes/health.ts(19,19): error TS2551: Property 'getFiles' does not exist on type 'MemStorage'. Did you mean 'getFile'?
+server/routes/mfa.ts(5,10): error TS2724: '"../middleware/auth"' has no exported member named 'authenticate'. Did you mean 'authenticateJwt'?
+server/routes/mfa.ts(9,35): error TS2345: Argument of type 'MemStorage' is not assignable to parameter of type 'IStorage'.
+  Types of property 'logActivity' are incompatible.
+    Type '(insertLog: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }) => Promise<...>' is not assignable to type '{ (log: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }): Promise<...>; (params: { ...; }): Promise<...>; }'.
+      Types of parameters 'insertLog' and 'params' are incompatible.
+        Type '{ userId: number; action: string; resourceId: string; resourceType: string; details: any; ipAddress: string | null; }' is not assignable to type '{ action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }'.
+          Types of property 'resourceId' are incompatible.
+            Type 'string' is not assignable to type 'number'.
+server/routes/mfa.ts(92,9): error TS2304: Cannot find name 'JWT_SECRET'.
+server/routes/mfa.ts(134,7): error TS2304: Cannot find name 'JWT_SECRET'.
+server/routes/team.ts(48,58): error TS2554: Expected 1 arguments, but got 2.
+server/routes/team.ts(54,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routes/team.ts(77,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routes/team.ts(179,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/storage.ts(8,3): error TS2440: Import declaration conflicts with local declaration of 'User'.
+server/storage.ts(16,8): error TS2305: Module '"@shared/schema"' has no exported member 'StoredFolder'.
+server/storage.ts(18,8): error TS2305: Module '"@shared/schema"' has no exported member 'FolderContents'.
+server/storage.ts(260,7): error TS2322: Type 'string | undefined' is not assignable to type 'string | null'.
+  Type 'undefined' is not assignable to type 'string | null'.
+server/storage.ts(341,54): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(398,7): error TS2353: Object literal may only specify known properties, and 'isDeleted' does not exist in type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(409,25): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(422,31): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(456,12): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(457,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+server/storage.ts(529,25): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(557,9): error TS2416: Property 'logActivity' in type 'MemStorage' is not assignable to the same property in base type 'IStorage'.
+  Type '(insertLog: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }) => Promise<...>' is not assignable to type '{ (log: { action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }): Promise<...>; (params: { ...; }): Promise<...>; }'.
+    Types of parameters 'insertLog' and 'params' are incompatible.
+      Type '{ userId: number; action: string; resourceId: string; resourceType: string; details: any; ipAddress: string | null; }' is not assignable to type '{ action: string; resourceType: string; userId?: number | null | undefined; resourceId?: number | null | undefined; details?: Json | undefined; ipAddress?: string | null | undefined; }'.
+        Types of property 'resourceId' are incompatible.
+          Type 'string' is not assignable to type 'number'.
+server/storage.ts(588,12): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(598,12): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(616,9): error TS2416: Property 'addTeamMember' in type 'MemStorage' is not assignable to the same property in base type 'IStorage'.
+  Type '(params: { userId: number; accessLevel: string; addedBy: number; }) => Promise<TeamMember>' is not assignable to type '{ (params: { userId: number; accessLevel: string; addedBy: number; }): Promise<TeamMember>; (email: string, role: string): Promise<TeamMember>; }'.
+    Types of parameters 'params' and 'email' are incompatible.
+      Type 'string' is not assignable to type '{ userId: number; accessLevel: string; addedBy: number; }'.
+server/storage.ts(684,59): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(712,74): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(720,7): error TS2322: Type 'number | undefined' is not assignable to type 'number | null'.
+  Type 'undefined' is not assignable to type 'number | null'.
+server/storage.ts(730,11): error TS2739: Type '{ id: number; userId: number; action: string; details: string; createdAt: Date; }' is missing the following properties from type '{ id: number; createdAt: Date; userId: number | null; action: string; resourceId: number | null; resourceType: string; details: unknown; ipAddress: string | null; }': resourceId, resourceType, ipAddress
+server/storage.ts(745,11): error TS2741: Property 'expiresAt' is missing in type '{ id: number; folderId: number; userId: number; accessLevel: "view" | "edit"; createdAt: Date; updatedAt: Date; }' but required in type '{ id: number; createdAt: Date; updatedAt: Date; folderId: number; userId: number; accessLevel: string; expiresAt: Date | null; }'.
+server/storage.ts(762,30): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(785,26): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(790,12): error TS2339: Property 'isDeleted' does not exist on type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+server/storage.ts(791,7): error TS2322: Type 'string' is not assignable to type 'Date'.
+server/storage.ts(823,38): error TS2802: Type 'MapIterator<[number, { id: number; createdAt: Date; fileId: number; userId: number; accessLevel: string; expiresAt: Date | null; }]>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+server/storage.ts(987,13): error TS2353: Object literal may only specify known properties, and 'updatedAt' does not exist in type '{ id: number; createdAt: Date; fileId: number; userId: number; accessLevel: string; expiresAt: Date | null; }'.
+server/storage.ts(1019,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/storage.ts(1084,5): error TS2322: Type 'undefined' is not assignable to type 'string | null'.
+server/storage.ts(1085,5): error TS2322: Type 'undefined' is not assignable to type 'Date | null'.
+server/vite.ts(5,64): error TS2307: Cannot find module 'vite' or its corresponding type declarations.
+server/vite.ts(10,24): error TS2307: Cannot find module 'nanoid' or its corresponding type declarations.
+server/vite.ts(37,15): error TS7006: Parameter 'msg' implicitly has an 'any' type.
+server/vite.ts(37,20): error TS7006: Parameter 'options' implicitly has an 'any' type.

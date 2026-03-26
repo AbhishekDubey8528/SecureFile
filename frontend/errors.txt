@@ -1,0 +1,90 @@
+src/components/dashboard/quick-access.tsx(18,30): error TS2554: Expected 2-3 arguments, but got 1.
+src/components/dashboard/quick-access.tsx(85,31): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/components/dashboard/recent-files.tsx(3,26): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+src/components/dashboard/team-files.tsx(3,26): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+src/components/dashboard/team-files.tsx(14,30): error TS2554: Expected 2-3 arguments, but got 1.
+src/components/dashboard/trash.tsx(3,26): error TS2307: Cannot find module '@/types' or its corresponding type declarations.
+src/components/dashboard/trash.tsx(18,30): error TS2554: Expected 2-3 arguments, but got 1.
+src/components/dashboard/trash.tsx(29,73): error TS2345: Argument of type '{ method: string; }' is not assignable to parameter of type 'string'.
+src/components/dashboard/trash.tsx(56,65): error TS2345: Argument of type '{ method: string; }' is not assignable to parameter of type 'string'.
+src/components/dashboard/trash.tsx(100,25): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/components/file/file-table.tsx(108,71): error TS2345: Argument of type '{ method: string; }' is not assignable to parameter of type 'string'.
+src/components/MfaSetup.tsx(1,25): error TS2307: Cannot find module '../contexts/AuthContext' or its corresponding type declarations.
+src/components/MfaSetup.tsx(4,31): error TS2304: Cannot find name 'useState'.
+src/components/MfaSetup.tsx(5,51): error TS2304: Cannot find name 'useState'.
+src/components/MfaSetup.tsx(6,29): error TS2304: Cannot find name 'useState'.
+src/components/MfaSetup.tsx(7,33): error TS2304: Cannot find name 'useState'.
+src/components/MfaSetup.tsx(8,37): error TS2304: Cannot find name 'useState'.
+src/components/MfaSetup.tsx(11,3): error TS2304: Cannot find name 'useEffect'.
+src/components/MfaSetup.tsx(14,32): error TS2304: Cannot find name 'mfaService'.
+src/components/MfaSetup.tsx(34,30): error TS2304: Cannot find name 'mfaService'.
+src/components/MfaSetup.tsx(51,30): error TS2304: Cannot find name 'mfaService'.
+src/components/ui/sidebar.tsx(71,35): error TS2339: Property 'pathname' does not exist on type '[string, <S = any>(to: string | URL, options?: { replace?: boolean | undefined; state?: S | undefined; transition?: boolean | undefined; } | undefined) => void]'.
+src/components/ui/sidebar.tsx(74,28): error TS2339: Property 'pathname' does not exist on type '[string, <S = any>(to: string | URL, options?: { replace?: boolean | undefined; state?: S | undefined; transition?: boolean | undefined; } | undefined) => void]'.
+src/pages/admin/activity-logs.tsx(142,8): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/admin/activity-logs.tsx(152,14): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/admin/user-management.tsx(148,8): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/admin/user-management.tsx(158,14): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/dashboard.tsx(31,8): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/dashboard.tsx(41,14): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/dashboard.tsx(68,29): error TS2339: Property 'length' does not exist on type '{}'.
+src/pages/dashboard.tsx(69,33): error TS2339: Property 'filter' does not exist on type '{}'.
+src/pages/dashboard.tsx(69,40): error TS7006: Parameter 'f' implicitly has an 'any' type.
+src/pages/dashboard.tsx(70,30): error TS2339: Property 'filter' does not exist on type '{}'.
+src/pages/dashboard.tsx(70,37): error TS7006: Parameter 'f' implicitly has an 'any' type.
+src/pages/dashboard.tsx(71,29): error TS2339: Property 'filter' does not exist on type '{}'.
+src/pages/dashboard.tsx(71,36): error TS7006: Parameter 'f' implicitly has an 'any' type.
+src/pages/login.tsx(110,17): error TS2322: Type '"remember"' is not assignable to type '"password" | "username"'.
+src/pages/my-files.tsx(61,5): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(options: DefinedInitialDataOptions<FileItem[], Error, FileItem[], readonly unknown[]>, queryClient?: QueryClient | undefined): DefinedUseQueryResult<...>', gave the following error.
+    Object literal may only specify known properties, and 'onSuccess' does not exist in type 'DefinedInitialDataOptions<FileItem[], Error, FileItem[], readonly unknown[]>'.
+  Overload 2 of 3, '(options: UndefinedInitialDataOptions<FileItem[], Error, FileItem[], readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<...>', gave the following error.
+    Object literal may only specify known properties, and 'onSuccess' does not exist in type 'UndefinedInitialDataOptions<FileItem[], Error, FileItem[], readonly unknown[]>'.
+  Overload 3 of 3, '(options: UseQueryOptions<FileItem[], Error, FileItem[], readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<FileItem[], Error>', gave the following error.
+    Object literal may only specify known properties, and 'onSuccess' does not exist in type 'UseQueryOptions<FileItem[], Error, FileItem[], readonly unknown[]>'.
+src/pages/my-files.tsx(61,17): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/pages/my-files.tsx(64,26): error TS7006: Parameter 'f' implicitly has an 'any' type.
+src/pages/my-files.tsx(72,15): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/pages/my-files.tsx(215,46): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/pages/my-files.tsx(283,32): error TS2339: Property 'filter' does not exist on type 'NonNullable<TQueryFnData>'.
+src/pages/my-files.tsx(283,39): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/pages/my-files.tsx(372,8): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/my-files.tsx(382,14): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/my-files.tsx(662,43): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/pages/my-files.tsx(745,11): error TS2739: Type 'FileItem' is missing the following properties from type 'SharedFile': updatedAt, shareId, accessLevel, sharedBy, owner
+src/pages/shared-files.tsx(138,8): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/shared-files.tsx(148,14): error TS2739: Type '{}' is missing the following properties from type 'SidebarProps': showMobile, onCloseMobile
+src/pages/shared-files.tsx(282,11): error TS2739: Type '{ id: number; name: string; originalName: string; mimeType: string; size: number; encrypted: boolean; ownerId: number; createdAt: string; }' is missing the following properties from type 'SharedFile': updatedAt, shareId, accessLevel, sharedBy, owner
+src/pages/team-files.tsx(224,25): error TS2322: Type 'SharedFile[] | undefined' is not assignable to type 'SharedFile[]'.
+  Type 'undefined' is not assignable to type 'SharedFile[]'.
+src/pages/TeamFiles.tsx(3,25): error TS2307: Cannot find module '../contexts/AuthContext' or its corresponding type declarations.
+src/pages/TeamFiles.tsx(4,67): error TS2307: Cannot find module 'antd' or its corresponding type declarations.
+src/pages/TeamFiles.tsx(5,97): error TS2307: Cannot find module '@ant-design/icons' or its corresponding type declarations.
+src/pages/TeamFiles.tsx(161,23): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/pages/TeamFiles.tsx(264,23): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/pages/trash.tsx(39,5): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(options: DefinedInitialDataOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>, queryClient?: QueryClient | undefined): DefinedUseQueryResult<...>', gave the following error.
+    Object literal may only specify known properties, and 'onError' does not exist in type 'DefinedInitialDataOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>'.
+  Overload 2 of 3, '(options: UndefinedInitialDataOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<...>', gave the following error.
+    Object literal may only specify known properties, and 'onError' does not exist in type 'UndefinedInitialDataOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>'.
+  Overload 3 of 3, '(options: UseQueryOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<...>', gave the following error.
+    Object literal may only specify known properties, and 'onError' does not exist in type 'UseQueryOptions<TrashedFile[], Error, TrashedFile[], readonly unknown[]>'.
+src/pages/trash.tsx(107,41): error TS2339: Property 'length' does not exist on type 'NonNullable<TQueryFnData>'.
+src/pages/trash.tsx(127,49): error TS2339: Property 'forEach' does not exist on type 'NonNullable<TQueryFnData>'.
+src/pages/trash.tsx(127,57): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/pages/trash.tsx(141,45): error TS2339: Property 'length' does not exist on type 'NonNullable<TQueryFnData>'.
+src/pages/trash.tsx(147,15): error TS2740: Type '{}' is missing the following properties from type 'SharedFile[]': length, pop, push, concat, and 35 more.
+src/pages/trash.tsx(152,31): error TS7006: Parameter 'file' implicitly has an 'any' type.
+src/services/mfa.ts(3,28): error TS2304: Cannot find name 'api'.
+src/services/mfa.ts(23,28): error TS2304: Cannot find name 'api'.
+src/services/team.ts(1,21): error TS2307: Cannot find module './api' or its corresponding type declarations.
+src/services/team.ts(45,27): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/services/team.ts(54,83): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/services/team.ts(72,43): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/services/team.ts(81,51): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/services/team.ts(99,30): error TS2366: Function lacks ending return statement and return type does not include 'undefined'.
+src/utils/auth.tsx(236,32): error TS2322: Type '{ user: User | null; loading: boolean; login: (username: string, password: string, remember?: boolean) => Promise<any>; register: (username: string, email: string, password: string, securityQuestion: string, securityAnswer: string) => Promise<...>; ... 7 more ...; getSecurityQuestion: (username: string) => Promise<s...' is not assignable to type 'AuthContextType'.
+  The types returned by 'updateAuthState(...)' are incompatible between these types.
+    Type 'Promise<boolean | undefined>' is not assignable to type 'Promise<boolean>'.
+      Type 'boolean | undefined' is not assignable to type 'boolean'.
+        Type 'undefined' is not assignable to type 'boolean'.

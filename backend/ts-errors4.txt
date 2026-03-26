@@ -1,0 +1,2 @@
+server/routes.ts(28,20): error TS2459: Module '"./storage"' declares 'User' locally, but it is not exported.
+server/routes/health.ts(19,19): error TS2551: Property 'getFiles' does not exist on type 'MemStorage'. Did you mean 'getFile'?

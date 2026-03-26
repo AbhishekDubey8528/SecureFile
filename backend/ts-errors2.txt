@@ -1,0 +1,48 @@
+server/encryption.ts(38,14): error TS2339: Property 'getAuthTag' does not exist on type 'Cipher'.
+server/encryption.ts(60,14): error TS2339: Property 'setAuthTag' does not exist on type 'Decipher'.
+server/encryption.ts(81,28): error TS2339: Property 'getAuthTag' does not exist on type 'Cipher'.
+server/encryption.ts(98,14): error TS2339: Property 'setAuthTag' does not exist on type 'Decipher'.
+server/middleware/auth.ts(54,16): error TS2339: Property 'lockoutUntil' does not exist on type 'User'.
+server/middleware/auth.ts(54,50): error TS2339: Property 'lockoutUntil' does not exist on type 'User'.
+server/middleware/auth.ts(57,30): error TS2339: Property 'lockoutUntil' does not exist on type 'User'.
+server/routes.ts(256,62): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes.ts(306,60): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes.ts(350,60): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes.ts(371,22): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes/health.ts(19,19): error TS2551: Property 'getFiles' does not exist on type 'MemStorage'. Did you mean 'getFile'?
+server/routes/mfa.ts(5,10): error TS2724: '"../middleware/auth"' has no exported member named 'authenticate'. Did you mean 'authenticateJwt'?
+server/routes/mfa.ts(89,22): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes/mfa.ts(92,9): error TS2304: Cannot find name 'JWT_SECRET'.
+server/routes/mfa.ts(131,20): error TS2339: Property 'role' does not exist on type 'User'.
+server/routes/mfa.ts(134,7): error TS2304: Cannot find name 'JWT_SECRET'.
+server/routes/team.ts(48,58): error TS2554: Expected 1 arguments, but got 2.
+server/routes/team.ts(54,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routes/team.ts(77,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routes/team.ts(147,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/routes/team.ts(179,7): error TS2322: Type 'string' is not assignable to type 'number'.
+server/storage.ts(257,7): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+server/storage.ts(260,7): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+server/storage.ts(276,5): error TS2322: Type 'string | null' is not assignable to type 'string | undefined'.
+  Type 'null' is not assignable to type 'string | undefined'.
+server/storage.ts(294,10): error TS2339: Property 'lastLogin' does not exist on type 'User'.
+server/storage.ts(303,10): error TS2339: Property 'failedLoginAttempts' does not exist on type 'User'.
+server/storage.ts(303,38): error TS2339: Property 'failedLoginAttempts' does not exist on type 'User'.
+server/storage.ts(305,17): error TS2339: Property 'failedLoginAttempts' does not exist on type 'User'.
+server/storage.ts(312,10): error TS2339: Property 'failedLoginAttempts' does not exist on type 'User'.
+server/storage.ts(313,10): error TS2339: Property 'lockoutUntil' does not exist on type 'User'.
+server/storage.ts(322,10): error TS2339: Property 'lockoutUntil' does not exist on type 'User'.
+server/storage.ts(389,11): error TS2322: Type '{ id: number; createdAt: Date; updatedAt: Date; folderId: null; encrypted: boolean; deletedAt: null; name: string; originalName: string; mimeType: string; size: number; path: string; ... 8 more ...; passwordHash?: string | null; }' is not assignable to type '{ id: number; name: string; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; originalName: string; mimeType: string; size: number; path: string; folderId: number | null; ... 6 more ...; passwordHash: string | null; }'.
+  Types of property 'encryptionIV' are incompatible.
+    Type 'string | null | undefined' is not assignable to type 'string | null'.
+      Type 'undefined' is not assignable to type 'string | null'.
+server/storage.ts(665,11): error TS2741: Property 'deletedAt' is missing in type '{ id: number; name: string; parentId: number | null; ownerId: number; createdAt: Date; updatedAt: Date; }' but required in type '{ id: number; name: string; parentId: number | null; ownerId: number; createdAt: Date; updatedAt: Date; deletedAt: Date | null; }'.
+server/storage.ts(946,9): error TS2322: Type 'number | undefined' is not assignable to type 'number | null'.
+  Type 'undefined' is not assignable to type 'number | null'.
+server/storage.ts(1086,5): error TS2322: Type 'null' is not assignable to type 'string | undefined'.
+server/storage.ts(1087,5): error TS2322: Type 'null' is not assignable to type 'Date | undefined'.
+server/vite.ts(5,64): error TS2307: Cannot find module 'vite' or its corresponding type declarations.
+server/vite.ts(10,24): error TS2307: Cannot find module 'nanoid' or its corresponding type declarations.
+server/vite.ts(37,15): error TS7006: Parameter 'msg' implicitly has an 'any' type.
+server/vite.ts(37,20): error TS7006: Parameter 'options' implicitly has an 'any' type.

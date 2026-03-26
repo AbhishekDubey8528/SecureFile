@@ -1,0 +1,27 @@
+
+> secure-file-vault-backend@1.0.0 dev
+> tsx server/index.ts
+
+[2m9:16:22 pm[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
+[2m9:16:22 pm[22m [33m[1m[vite][22m[39m [33mwarning: `optimizeDeps.esbuildOptions` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `optimizeDeps.rolldownOptions` instead.[39m
+[33mYou or a plugin you are using have set `optimizeDeps.esbuildOptions` but this option is now deprecated. Vite now uses Rolldown to optimize the dependencies. Please use `optimizeDeps.rolldownOptions` instead.[39m
+C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:30234
+		const err = typeof e === "string" ? new Error(e) : e;
+		                                    ^
+
+
+Error: Failed to read theme file: ENOENT: no such file or directory, open 'C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\theme.json'
+    at PluginContext._formatLog (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:30234:39)
+    at PluginContext.error (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:30231:14)
+    at PluginContext.buildStart (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\frontend\node_modules\@replit\vite-plugin-shadcn-theme-json\src\index.ts:38:14)
+    at async Promise.all (index 6)
+    at async EnvironmentPluginContainer.hookParallel (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:29882:3)
+    at async EnvironmentPluginContainer.buildStart (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:29892:3)
+    at async <anonymous> (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:26166:41)
+    at async _createServer (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\node_modules\vite\dist\node\chunks\node.js:26184:9)
+    at async setupVite (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\server\vite.ts:32:16)
+    at async <anonymous> (C:\Users\Abhishek\OneDrive\Desktop\SecureFile\backend\server\index.ts:72:5) {
+  plugin: 'vite-plugin-theme'
+}
+
+Node.js v22.13.1
