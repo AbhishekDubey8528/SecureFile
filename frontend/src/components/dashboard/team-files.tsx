@@ -11,7 +11,7 @@ export function TeamFiles() {
   const { data: files, isLoading, error } = useQuery<FileItem[]>({
     queryKey: ["team-files"],
     queryFn: async () => {
-      const response = await apiRequest("/api/shared-files");
+      const response = await apiRequest("GET", "/api/shared-files");
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || "Failed to fetch team files");

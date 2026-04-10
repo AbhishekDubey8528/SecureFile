@@ -51,8 +51,8 @@ const routes = [
 ];
 
 interface SidebarProps {
-  showMobile: boolean;
-  onCloseMobile: () => void;
+  showMobile?: boolean;
+  onCloseMobile?: () => void;
 }
 
 export function Sidebar({ showMobile, onCloseMobile }: SidebarProps) {

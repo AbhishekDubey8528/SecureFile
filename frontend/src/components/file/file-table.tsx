@@ -105,9 +105,7 @@ export function FileTable({ files, showShareActions = false, onShare, onDownload
 
   const deleteMutation = useMutation({
     mutationFn: async (fileId: number) => {
-      const response = await apiRequest(`/api/files/${fileId}/trash`, {
-        method: "POST",
-      });
+      const response = await apiRequest("POST", `/api/files/${fileId}/trash`);
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || "Failed to move file to trash");

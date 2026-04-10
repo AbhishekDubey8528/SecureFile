@@ -1,4 +1,4 @@
-import { api } from './api';
+import { apiRequest } from '@/lib/queryClient';
 
 export interface TeamMember {
   id: number;
@@ -33,75 +33,44 @@ export interface ActivityLog {
 }
 
 export const teamService = {
-  // Error handler
-  handleError(error: any): never {
-    if (error.response?.data?.message) {
-      throw new Error(error.response.data.message);
-    }
-    throw error;
-  },
-
   // Team members
   async getTeamMembers(): Promise<TeamMember[]> {
-    try {
-      const response = await api.get('/api/team/members');
-      return response.data.members || [];
-    } catch (error) {
-      this.handleError(error);
-    }
+    const response = await apiRequest("GET", '/api/team/members');
+    const data = await response.json();
+    return data.members || [];
   },
 
   async addTeamMember(username: string, accessLevel: 'read' | 'write' | 'admin'): Promise<TeamMember> {
-    try {
-      const response = await api.post('/api/team/members', { username, accessLevel });
-      return response.data.member;
-    } catch (error) {
-      this.handleError(error);
-    }
+    const response = await apiRequest("POST", '/api/team/members', { username, accessLevel });
+    const data = await response.json();
+    return data.member;
   },
 
   async removeTeamMember(memberId: number): Promise<void> {
-    try {
-      await api.delete(`/api/team/members/${memberId}`);
-    } catch (error) {
-      this.handleError(error);
-    }
+    await apiRequest("DELETE", `/api/team/members/${memberId}`);
   },
 
   // Team files
   async getTeamFiles(path: string = '/'): Promise<TeamFile[]> {
-    try {
-      const response = await api.get('/api/team/files', { params: { path } });
-      return response.data.files || [];
-    } catch (error) {
-      this.handleError(error);
-    }
+    const response = await apiRequest("GET", `/api/team/files?path=${encodeURIComponent(path)}`);
+    const data = await response.json();
+    return data.files || [];
   },
 
   async createFolder(path: string, name: string): Promise<TeamFile> {
-    try {
-      const response = await api.post('/api/team/files/folder', { path, name });
-      return response.data.folder;
-    } catch (error) {
-      this.handleError(error);
-    }
+    const response = await apiRequest("POST", '/api/team/files/folder', { path, name });
+    const data = await response.json();
+    return data.folder;
   },
 
   async shareFile(fileId: number, users: string[]): Promise<void> {
-    try {
-      await api.post(`/api/team/files/${fileId}/share`, { users });
-    } catch (error) {
-      this.handleError(error);
-    }
+    await apiRequest("POST", `/api/team/files/${fileId}/share`, { users });
   },
 
   // Activity logs
   async getRecentActivity(): Promise<ActivityLog[]> {
-    try {
-      const response = await api.get('/api/team/activity');
-      return response.data.activities || [];
-    } catch (error) {
-      this.handleError(error);
-    }
+    const response = await apiRequest("GET", '/api/team/activity');
+    const data = await response.json();
+    return data.activities || [];
   }
 }; 

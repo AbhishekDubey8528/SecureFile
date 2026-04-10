@@ -1,7 +1,10 @@
+import { apiRequest } from "@/lib/queryClient";
+
 export const verifyMfa = async (token: string): Promise<{ success: boolean; message: string }> => {
   try {
-    const response = await api.post("/mfa/verify", { token });
-    const { token: newToken } = response.data;
+    const response = await apiRequest("POST", "/api/mfa/verify", { token });
+    const data = await response.json();
+    const { token: newToken } = data;
     
     // Update the stored token
     if (newToken) {
@@ -10,7 +13,7 @@ export const verifyMfa = async (token: string): Promise<{ success: boolean; mess
     
     return {
       success: true,
-      message: response.data.message
+      message: data.message
     };
   } catch (error) {
     console.error("Error verifying MFA:", error);
@@ -20,8 +23,9 @@ export const verifyMfa = async (token: string): Promise<{ success: boolean; mess
 
 export const disableMfa = async (): Promise<{ success: boolean; message: string }> => {
   try {
-    const response = await api.post("/mfa/disable");
-    const { token: newToken } = response.data;
+    const response = await apiRequest("POST", "/api/mfa/disable");
+    const data = await response.json();
+    const { token: newToken } = data;
     
     // Update the stored token
     if (newToken) {
@@ -30,7 +34,7 @@ export const disableMfa = async (): Promise<{ success: boolean; message: string 
     
     return {
       success: true,
-      message: response.data.message
+      message: data.message
     };
   } catch (error) {
     console.error("Error disabling MFA:", error);

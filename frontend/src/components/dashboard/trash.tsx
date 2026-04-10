@@ -1,6 +1,6 @@
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import { FileItem } from "@/types";
+import { FileItem, TrashedFile } from "@/types";
 import { FileIcon } from "../file/file-icon";
 import { Button } from "@/components/ui/button";
 import { RefreshCw, Trash2 } from "lucide-react";
@@ -12,10 +12,10 @@ import { apiRequest } from "@/lib/queryClient";
 export function Trash() {
   const { toast } = useToast();
   const queryClient = useQueryClient();
-  const { data: files, isLoading } = useQuery({
+  const { data: files, isLoading } = useQuery<TrashedFile[]>({
     queryKey: ["/api/trash"],
     queryFn: async () => {
-      const response = await apiRequest("/api/trash");
+      const response = await apiRequest("GET", "/api/trash");
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || "Failed to fetch trash");
@@ -26,9 +26,7 @@ export function Trash() {
 
   const restoreMutation = useMutation({
     mutationFn: async (fileId: number) => {
-      const response = await apiRequest(`/api/trash/${fileId}/restore`, {
-        method: "POST",
-      });
+      const response = await apiRequest("POST", `/api/trash/${fileId}/restore`);
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || "Failed to restore file");
@@ -53,9 +51,7 @@ export function Trash() {
 
   const deleteMutation = useMutation({
     mutationFn: async (fileId: number) => {
-      const response = await apiRequest(`/api/trash/${fileId}`, {
-        method: "DELETE",
-      });
+      const response = await apiRequest("DELETE", `/api/trash/${fileId}`);
       if (!response.ok) {
         const error = await response.json();
         throw new Error(error.message || "Failed to delete file");

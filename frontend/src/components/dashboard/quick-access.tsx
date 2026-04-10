@@ -15,7 +15,7 @@ export function QuickAccess() {
     queryKey: ["/api/files"],
     enabled: !!token,
     queryFn: async () => {
-      const response = await apiRequest("/api/files");
+      const response = await apiRequest("GET", "/api/files");
       if (!response.ok) {
         throw new Error("Failed to fetch files");
       }
@@ -82,7 +82,7 @@ export function QuickAccess() {
         
         {recentFiles.length > 0 && (
           <div className="divide-y">
-            {recentFiles.map((file) => (
+            {recentFiles.map((file: any) => (
               <div key={file.id} className="flex items-center p-4 hover:bg-gray-50">
                 <FileIcon mimeType={file.mimeType} size={32} />
                 <div className="ml-3 flex-1">
