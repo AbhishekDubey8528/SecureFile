@@ -30,7 +30,7 @@ export default defineConfig({
   },
   root: __dirname,
   build: {
-    outDir: path.resolve(__dirname, "../backend/dist/public"),
+    outDir: process.env.VERCEL ? path.resolve(__dirname, "dist") : path.resolve(__dirname, "../backend/dist/public"),
     emptyOutDir: true,
   },
   server: {
